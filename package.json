@@ -1,7 +1,7 @@
 
 {
   "name": "clinica-vitalite",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "scripts": {
     "dev": "vite",
     "build": "chmod +x node_modules/.bin/vite && vite build",
