@@ -1,11 +1,11 @@
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import CadastroPaciente from "./pages/CadastroPaciente";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import { useEffect, useState } from "react";
 
 export default function App() {
   const [usuario, setUsuario] = useState(null);
@@ -24,6 +24,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={usuario ? <Home /> : <Navigate to="/login" />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/paciente" element={usuario ? <CadastroPaciente /> : <Navigate to="/login" />} />
     </Routes>
   );
 }
