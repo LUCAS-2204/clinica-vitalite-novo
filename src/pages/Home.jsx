@@ -14,8 +14,10 @@ export default function Home() {
   return (
     <div style={{ padding: "2rem", fontFamily: "Arial" }}>
       <h1>Bem-vindo à Clínica Vitalité</h1>
+      <button onClick={() => navigate("/paciente")}>Cadastrar Novo Paciente</button>
+      <button onClick={() => alert("Em breve: Tela de receita!")}>Criar Receita</button>
+      <br/><br/>
       <button onClick={sair}>Sair</button>
-      <p>Aqui aparecerá a tela de cadastro, receitas, etc.</p>
     </div>
   );
 }
