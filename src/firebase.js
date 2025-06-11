@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-   apiKey: "AIzaSyBWYeVM087npG2KHi8PFOv33A0hQsi5ppk",
-  authDomain: "clinica-vitalite.firebaseapp.com",
-  projectId: "clinica-vitalite",
-  storageBucket: "clinica-vitalite.firebasestorage.app",
-  messagingSenderId: "458561544439",
-  appId: "1:458561544439:web:6321568b90e3571ee733f2"
+  apiKey: "SUA-CHAVE-AQUI",
+  authDomain: "SEU-PROJETO.firebaseapp.com",
+  projectId: "SEU-ID",
+  storageBucket: "SEU-PROJETO.appspot.com",
+  messagingSenderId: "ID-AQUI",
+  appId: "APP-ID-AQUI"
 };
 
 const app = initializeApp(firebaseConfig);
