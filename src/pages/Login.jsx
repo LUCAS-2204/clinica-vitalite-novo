@@ -22,20 +22,8 @@ export default function Login() {
   return (
     <div style={{ maxWidth: "400px", margin: "4rem auto", fontFamily: "Arial" }}>
       <h2>Login - Clínica Vitalité</h2>
-      <input
-        type="email"
-        placeholder="E-mail"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        style={{ display: "block", marginBottom: "1rem", width: "100%" }}
-      />
-      <input
-        type="password"
-        placeholder="Senha"
-        value={senha}
-        onChange={(e) => setSenha(e.target.value)}
-        style={{ display: "block", marginBottom: "1rem", width: "100%" }}
-      />
+      <input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
+      <input type="password" placeholder="Senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
       <button onClick={login}>Entrar</button>
     </div>
   );
